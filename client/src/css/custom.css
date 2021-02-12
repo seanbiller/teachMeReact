@@ -1,0 +1,59 @@
+#fullscreen {
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron {
+  background-color: transparent;
+  text-align: center;
+}
+#about-me {
+  text-align: left;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-success:active:focus,
+.btn-primary:visited {
+  background-color: transparent !important;
+  border-color: white !important;
+}
+
+body {
+  color: white;
+}
+.card {
+  border: transparent;
+  background-color: transparent;
+  align-items: center;
+  text-align: center;
+}
+
+#learning-cards {
+  padding: 40px;
+}
+
+.card-img-top {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+}
+
+a {
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
