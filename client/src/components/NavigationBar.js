@@ -23,14 +23,29 @@ const NavigationBar = () => {
               Home
             </Nav.Link>
             <NavDropdown title="React" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/what-is-react">
-                What is React
+              <NavDropdown.Item as={Link} to="/props-vs-state">
+                Props Vs State
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/react-components">
                 What are React Components
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/functional-vs-class">
                 Functional vs Class Components
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/what-is-jsx">
+                What Is JSX
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/lifecycle-methods">
+                LifeCycle Methods
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/react-events">
+                React Events
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/virtual-dom">
+                Virtual Dom
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/react-developer-tools">
+                React Developer Tools
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

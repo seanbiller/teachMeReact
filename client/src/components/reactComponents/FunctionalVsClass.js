@@ -3,11 +3,11 @@ import { Col, Container, Row, Alert } from "react-bootstrap";
 import Prism from "prismjs";
 import "../../css/functionalVsClass.css";
 
-import FunctionalComponent from "./reactSubComponents/FunctionalComponent";
-import ClassComponent from "./reactSubComponents/ClassComponent";
-import ClassComponentWithState from "./reactSubComponents/ClassComponentWithState";
-import FunctionalComponentWithState from "./reactSubComponents/FunctionalComponentWithState";
-import ClassComponentWithStateConstructor from "./reactSubComponents/ClassComponentWithStateConstructor";
+import FunctionalComponent from "./functionVsClass/FunctionalComponent";
+import ClassComponent from "./functionVsClass/ClassComponent";
+import ClassComponentWithState from "./functionVsClass/ClassComponentWithState";
+import FunctionalComponentWithState from "./functionVsClass/FunctionalComponentWithState";
+import ClassComponentWithStateConstructor from "./functionVsClass/ClassComponentWithStateConstructor";
 
 const code1 = `
 const FunctionalComponent = () => {
