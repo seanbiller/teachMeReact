@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
-
-import NavigationBar from "./NavigationBar";
-import Footer from "./Footer";
-import LandingPage from "./LandingPage";
-import FunctionalVsClass from "./reactComponents/FunctionalVsClass";
-import WhatIsJSX from "./reactComponents/WhatIsJSX";
-import ReactComponents from "./reactComponents/ReactComponents";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faThumbsUp as thumbsUpSolid } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp as thumbsUpRegular } from "@fortawesome/free-regular-svg-icons";
-import PropsVsState from "./reactComponents/PropsVsState";
-import LifeCycleMethods from "./reactComponents/LifeCycleMethods";
-import ReactEvents from "./reactComponents/reactComponents/ReactEvents";
-import VirtualDom from "./reactComponents/reactComponents/VirtualDom";
-import ReactDeveloperTools from "./reactComponents/reactComponents/ReactDeveloperTools";
+
+import NavigationBar from "./NavigationBar";
+import Footer from "./Footer";
+import LandingPage from "./LandingPage";
+
+import FunctionalVsClass from "./reactFolder/FunctionalVsClass";
+import WhatIsJSX from "./reactFolder/WhatIsJSX";
+import ReactComponents from "./reactFolder/ReactComponents";
+import PropsVsState from "./reactFolder/PropsVsState";
+import LifeCycleMethods from "./reactFolder/LifeCycleMethods";
+import ReactEvents from "./reactFolder/ReactEvents";
+import VirtualDom from "./reactFolder/VirtualDom";
+import ReactDeveloperTools from "./reactFolder/ReactDeveloperTools";
 
 library.add(fab, thumbsUpSolid, thumbsUpRegular);
 

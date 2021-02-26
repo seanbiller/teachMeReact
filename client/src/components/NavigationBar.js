@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, NavDropdown, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from "../images/TeachMeReactLogo.svg.png";
 
 const NavigationBar = () => {
   return (
@@ -10,11 +11,18 @@ const NavigationBar = () => {
         className="p-5"
         collapseOnSelect
         expand="lg"
-        bg="transparent"
-        variant="dark"
+        bg="light"
+        variant="light"
       >
         <Navbar.Brand as={Link} to="/">
-          Teach-Me-React
+          <img
+            alt=""
+            src={Logo}
+            width="52"
+            height="69"
+            className="d-inline-block align-center"
+          />{" "}
+          TeachMeReact
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -51,6 +59,7 @@ const NavigationBar = () => {
           </Nav>
           <Nav>
             <Button
+              variant="success"
               href="https://www.linkedin.com/in/seanbiller/"
               target="_blank"
             >
@@ -59,7 +68,11 @@ const NavigationBar = () => {
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
             </Button>
             <span className="ml-2"></span>
-            <Button href="https://github.com/seanbiller" target="_blank">
+            <Button
+              variant="success"
+              href="https://github.com/seanbiller"
+              target="_blank"
+            >
               Find Me on Github
               <span className="ml-2"></span>
               <FontAwesomeIcon icon={["fab", "github"]} size="lg" />

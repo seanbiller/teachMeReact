@@ -20,7 +20,7 @@ const LandingPage = () => {
               to React.
             </p>
             <p>
-              <Button variant="primary">Learn more</Button>
+              <Button variant="success">Learn more</Button>
             </p>
           </Jumbotron>
         </Col>
@@ -34,7 +34,7 @@ const LandingPage = () => {
               Boston MA area.
             </p>
             <p>
-              <Button variant="primary">Learn more</Button>
+              <Button variant="success">Learn more</Button>
             </p>
           </Jumbotron>
         </Col>
@@ -64,31 +64,37 @@ const LandingPage = () => {
         </Col>
       </Row>
       <Row id="learning-cards">
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={ReactLogo} />
-          <Card.Body>
-            <Card.Title>React</Card.Title>
-            <Card.Text>Start Here to Learn React</Card.Text>
-            <Button variant="primary">Learn React</Button>
-          </Card.Body>
-        </Card>
+        <Col lg={4}>
+          <Card className="learning-card">
+            <Card.Img variant="top" src={ReactLogo} />
+            <Card.Body>
+              <Card.Title>React</Card.Title>
+              <Card.Text>Start Here to Learn React</Card.Text>
+              <Button variant="success">Learn React</Button>
+            </Card.Body>
+          </Card>
+        </Col>
 
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={JavaScriptLogo} />
-          <Card.Body>
-            <Card.Title>JavaScript</Card.Title>
-            <Card.Text>Start Here to Learn JavaScript</Card.Text>
-            <Button variant="primary">Learn JavaScript</Button>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={ReduxLogo} id="reduxlogo" />
-          <Card.Body>
-            <Card.Title>Redux</Card.Title>
-            <Card.Text>Start Here to Learn Redux</Card.Text>
-            <Button variant="primary">Learn Redux</Button>
-          </Card.Body>
-        </Card>
+        <Col lg={4}>
+          <Card className="learning-card">
+            <Card.Img variant="top" src={JavaScriptLogo} />
+            <Card.Body>
+              <Card.Title>JavaScript</Card.Title>
+              <Card.Text>Start Here to Learn JavaScript</Card.Text>
+              <Button variant="success">Learn JavaScript</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col lg={4}>
+          <Card className="learning-card">
+            <Card.Img variant="top" src={ReduxLogo} id="reduxlogo" />
+            <Card.Body>
+              <Card.Title>Redux</Card.Title>
+              <Card.Text>Start Here to Learn Redux</Card.Text>
+              <Button variant="success">Learn Redux</Button>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
   );

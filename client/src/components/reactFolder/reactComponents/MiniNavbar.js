@@ -6,9 +6,9 @@ const MiniNavbar = () => {
       <nav>
         NavBar
         <span> | </span>
-        <button>Home</button>
+        <button className="myButton">Home</button>
         <span> | </span>
-        <button>Blogs</button>
+        <button className="myButton">Blogs</button>
       </nav>
     </div>
   );

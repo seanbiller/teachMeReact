@@ -11,7 +11,11 @@ const WhatIsJSX = () => {
       </Row>
       <Row>
         <Col>
-          <p>JSX is not HTML but its very similar</p>
+          <p>
+            JSX stands for JavaScript XML, it allows us to write HTML elements
+            in JavaScript and place them in the DOM without any{" "}
+            <code>createElement()</code> or <code>appendChild()</code> methods.
+          </p>
         </Col>
       </Row>
     </Container>
