@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Prism from "prismjs";
 import ParentComponent from "./propsVsState/ParentComponent";
-import ChildComponent from "./propsVsState/ChildComponent";
 import StateComponent from "./propsVsState/StateComponent";
 
 const code1 = `

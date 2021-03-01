@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, NavDropdown, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../images/TeachMeReactLogo.svg.png";
+import Logo from "../images/logo2.png";
 
 const NavigationBar = () => {
   return (
@@ -11,15 +11,15 @@ const NavigationBar = () => {
         className="p-5"
         collapseOnSelect
         expand="lg"
-        bg="light"
-        variant="light"
+        bg="dark"
+        variant="dark"
       >
         <Navbar.Brand as={Link} to="/">
           <img
             alt=""
             src={Logo}
-            width="52"
-            height="69"
+            width="50"
+            height="50"
             className="d-inline-block align-center"
           />{" "}
           TeachMeReact
@@ -31,8 +31,8 @@ const NavigationBar = () => {
               Home
             </Nav.Link>
             <NavDropdown title="React" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/props-vs-state">
-                Props Vs State
+              <NavDropdown.Item as={Link} to="/what-is-jsx">
+                What Is JSX
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/react-components">
                 What are React Components
@@ -40,26 +40,26 @@ const NavigationBar = () => {
               <NavDropdown.Item as={Link} to="/functional-vs-class">
                 Functional vs Class Components
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/what-is-jsx">
-                What Is JSX
+              <NavDropdown.Item as={Link} to="/props-vs-state">
+                Props Vs State
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/lifecycle-methods">
+              {/* <NavDropdown.Item as={Link} to="/lifecycle-methods">
                 LifeCycle Methods
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/react-events">
-                React Events
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item as={Link} to="/virtual-dom">
                 Virtual Dom
               </NavDropdown.Item>
+              {/* <NavDropdown.Item as={Link} to="/react-events">
+                React Events
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/react-developer-tools">
                 React Developer Tools
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Nav>
             <Button
-              variant="success"
+              variant="outline-success"
               href="https://www.linkedin.com/in/seanbiller/"
               target="_blank"
             >
@@ -69,7 +69,7 @@ const NavigationBar = () => {
             </Button>
             <span className="ml-2"></span>
             <Button
-              variant="success"
+              variant="outline-success"
               href="https://github.com/seanbiller"
               target="_blank"
             >

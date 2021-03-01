@@ -6,6 +6,7 @@ import ReactLogo from "../images/react.png";
 import ReduxLogo from "../images/redux.png";
 import JavaScriptLogo from "../images/javascript.png";
 import Headshot from "../images/headshot.png";
+import Logo from "../images/logo2.png";
 
 const LandingPage = () => {
   return (
@@ -19,26 +20,27 @@ const LandingPage = () => {
               visual way possible. We cover Redux and JavaScript as they pertain
               to React.
             </p>
-            <p>
-              <Button variant="success">Learn more</Button>
-            </p>
+            <img
+              alt=""
+              src={Logo}
+              width="250"
+              height="250"
+              className="d-inline-block align-center"
+            />
           </Jumbotron>
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col lg={7}>
           <Jumbotron id="about-me">
             <h1>About Me,</h1>
             <p>
               My name is Sean Biller and I'm a React Developer based in the
               Boston MA area.
             </p>
-            <p>
-              <Button variant="success">Learn more</Button>
-            </p>
           </Jumbotron>
         </Col>
-        <Col>
+        <Col lg={5}>
           <Card id="contact-card">
             <Card.Img variant="top" src={Headshot} />
             <Card.Body>
@@ -70,7 +72,7 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>React</Card.Title>
               <Card.Text>Start Here to Learn React</Card.Text>
-              <Button variant="success">Learn React</Button>
+              <Button variant="outline-success">Learn React</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -81,7 +83,7 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>JavaScript</Card.Title>
               <Card.Text>Start Here to Learn JavaScript</Card.Text>
-              <Button variant="success">Learn JavaScript</Button>
+              <Button variant="outline-success">Learn JavaScript</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -91,7 +93,7 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>Redux</Card.Title>
               <Card.Text>Start Here to Learn Redux</Card.Text>
-              <Button variant="success">Learn Redux</Button>
+              <Button variant="outline-success">Learn Redux</Button>
             </Card.Body>
           </Card>
         </Col>
