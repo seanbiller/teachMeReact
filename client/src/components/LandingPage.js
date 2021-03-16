@@ -1,6 +1,7 @@
 import React from "react";
 import { Jumbotron, Button, Col, Row, Container, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 import ReactLogo from "../images/react.png";
 import ReduxLogo from "../images/redux.png";
@@ -72,7 +73,9 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>React</Card.Title>
               <Card.Text>Start Here to Learn React</Card.Text>
-              <Button variant="outline-success">Learn React</Button>
+              <Button variant="outline-primary" as={Link} to="/react">
+                Learn React
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -83,7 +86,7 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>JavaScript</Card.Title>
               <Card.Text>Start Here to Learn JavaScript</Card.Text>
-              <Button variant="outline-success">Learn JavaScript</Button>
+              <Button variant="outline-primary">Coming Soon!</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -93,7 +96,7 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>Redux</Card.Title>
               <Card.Text>Start Here to Learn Redux</Card.Text>
-              <Button variant="outline-success">Learn Redux</Button>
+              <Button variant="outline-primary">Coming Soon!</Button>
             </Card.Body>
           </Card>
         </Col>

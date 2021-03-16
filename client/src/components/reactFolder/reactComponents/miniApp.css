@@ -1,0 +1,17 @@
+#mini-app {
+  border-radius: 10px;
+  border-style: solid;
+  padding: 20px;
+}
+
+#mini-navbar {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#mini-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

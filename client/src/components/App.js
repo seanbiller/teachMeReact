@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
+
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -10,14 +12,15 @@ import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 
-import FunctionalVsClass from "./reactFolder/FunctionalVsClass";
-import WhatIsJSX from "./reactFolder/WhatIsJSX";
-import ReactComponents from "./reactFolder/ReactComponents";
-import PropsVsState from "./reactFolder/PropsVsState";
-import LifeCycleMethods from "./reactFolder/LifeCycleMethods";
-import ReactEvents from "./reactFolder/ReactEvents";
-import VirtualDom from "./reactFolder/VirtualDom";
-import ReactDeveloperTools from "./reactFolder/ReactDeveloperTools";
+import ReactNavBar from "./ReactNavBar";
+import Menu from "./Menu";
+import ReactMaster from "./reactFolder/ReactMaster";
+import JavaScriptMaster from "./javaScriptComponents/JavaScriptMaster";
+import JavaScriptNavBar from "./JavaScriptNavBar";
+import ReduxNavBar from "./ReduxNavBar";
+import LibrariesMaster from "./libraries/LibrariesMaster";
+import ReduxMaster from "./reduxComponents/ReduxMaster";
+import LibrariesNavBar from "./LibrariesNavBar";
 
 library.add(fab, thumbsUpSolid, thumbsUpRegular);
 
@@ -25,32 +28,31 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Container fluid id="fullscreen">
-          <Col>
-            <NavigationBar />
-            <Route exact path="/" component={LandingPage} />
-            <Route
-              exact
-              path="/functional-vs-class"
-              component={FunctionalVsClass}
-            />
-            <Route exact path="/props-vs-state" component={PropsVsState} />
-
-            <Route exact path="/react-components" component={ReactComponents} />
-            <Route exact path="/what-is-jsx" component={WhatIsJSX} />
-            <Route
-              exact
-              path="/lifecycle-methods"
-              component={LifeCycleMethods}
-            />
-            <Route exact path="/react-events" component={ReactEvents} />
-            <Route exact path="/virtual-dom" component={VirtualDom} />
-            <Route
-              exact
-              path="/react-developer-tools"
-              component={ReactDeveloperTools}
-            />
-          </Col>
+        <ScrollToTop />
+        <NavigationBar />
+        <Container fluid>
+          <Row>
+            <Col lg={2}>
+              <Menu />
+            </Col>
+            <Col lg={8}>
+              <Switch>
+                <Route exact path="/" component={LandingPage} />
+                <Route exact path="/react" component={ReactMaster} />
+                <Route exact path="/javascript" component={JavaScriptMaster} />
+                <Route exact path="/redux" component={ReduxMaster} />
+                <Route exact path="/libraries" component={LibrariesMaster} />
+              </Switch>
+            </Col>
+            <Col lg={2}>
+              <Switch>
+                <Route exact path="/react" component={ReactNavBar} />
+                <Route exact path="/javascript" component={JavaScriptNavBar} />
+                <Route exact path="/redux" component={ReduxNavBar} />
+                <Route exact path="/libraries" component={LibrariesNavBar} />
+              </Switch>
+            </Col>
+          </Row>
           <Row>
             <Footer />
           </Row>

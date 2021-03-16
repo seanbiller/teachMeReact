@@ -1,17 +1,17 @@
 import React from "react";
 
-const myName = () => {
-  return <p>My Name is JSX</p>;
+const javaScriptFunction = () => {
+  return <p>This is a function with JSX!</p>;
 };
 
-const WithoutJSX = () => {
+const JSX = () => {
   return (
     <div>
-      <h1>I'm a h1 tag using JSX!</h1>
-      <p>I'm a p tag using JSX </p>
-      {myName()}
+      <h3>This is a h3 tag using JSX!</h3>
+      <p>This is a p tag using JSX!</p>
+      {javaScriptFunction()}
     </div>
   );
 };
 
-export default WithoutJSX;
+export default JSX;

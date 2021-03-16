@@ -1,107 +1,15 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Prism from "prismjs";
-import MiniApp from "./reactComponents/MiniApp";
-import MiniNavbar from "./reactComponents/MiniNavbar";
-import MiniBlog from "./reactComponents/MiniBlog";
-import MiniBlogTitle from "./reactComponents/MiniBlogTitle";
-import MiniBlogArticle from "./reactComponents/MiniBlogArticle";
-
-const code1 = `
-import React from "react";
-import MiniNavbar from "./MiniNavbar";
-import MiniBlog from "./MiniBlog";
-
-const MiniApp = () => {
-  return (
-    <div>
-      <MiniNavbar />
-      <MiniBlog />
-    </div>
-  );
-};
-
-export default MiniApp;
-`.trim();
-
-const code2 = `
-import React from "react";
-
-const MiniNavbar = () => {
-  return (
-    <div>
-      <nav>
-        NavBar
-        <span> | </span>
-        <button>Home</button>
-        <span> | </span>
-        <button>Blogs</button>
-      </nav>
-    </div>
-  );
-};
-
-export default MiniNavbar;
-`.trim();
-
-const code3 = `
-import React from "react";
-import MiniBlogArticle from "./MiniBlogArticle";
-import MiniBlogTitle from "./MiniBlogTitle";
-
-const MiniBlog = () => {
-  return (
-    <div>
-      <MiniBlogTitle />
-      <MiniBlogArticle />
-    </div>
-  );
-};
-
-export default MiniBlog;
-`.trim();
-
-const code4 = `
-import React from "react";
-
-const MiniBlogTitle = () => {
-  return (
-    <div>
-      <h3>Why React is Better Than Angular</h3>
-    </div>
-  );
-};
-
-export default MiniBlogTitle;
-
-`.trim();
-
-const code5 = `
-import React from "react";
-import MiniNavbar from './reactComponents/MiniNavbar';
-import MiniBlogArticle from './ReactComponents';
-
-const MiniBlogArticle = () => {
-  return (
-    <div>
-      <p>
-        React is better than Angular...
-        <br></br>
-        Like way better
-        <br></br>
-        You need Proof?
-        <br></br>I knew a guy who said he was gonna learn Angular...
-        <br></br>
-        Next day a vending machine fell on him...
-        <br></br>
-        True story
-      </p>
-    </div>
-  );
-};
-
-export default MiniBlogArticle;
-`.trim();
+import MiniApp, { MiniAppCode } from "./reactComponents/MiniApp";
+import MiniNavbar, { MiniNavbarCode } from "./reactComponents/MiniNavbar";
+import MiniBlog, { MiniBlogCode } from "./reactComponents/MiniBlog";
+import MiniBlogTitle, {
+  MiniBlogTitleCode,
+} from "./reactComponents/MiniBlogTitle";
+import MiniBlogArticle, {
+  MiniBlogArticleCode,
+} from "./reactComponents/MiniBlogArticle";
 
 class ReactComponents extends React.Component {
   componentDidMount() {
@@ -109,7 +17,7 @@ class ReactComponents extends React.Component {
   }
   render() {
     return (
-      <Container>
+      <Container id="react-components">
         <Row className="p-3">
           <Col>
             <h1 align="center">React Components</h1>
@@ -121,57 +29,78 @@ class ReactComponents extends React.Component {
               One of the most powerful features of React is its ability to break
               up UI into reusable Components. What does that mean? Well, let’s
               have a look at an example of a very basic App called MiniApp.
+              MiniApp is made up of two components called MiniNavbar and
+              MiniBlog.
             </p>
             <pre>
-              <code className="language-jsx line-numbers">{code1}</code>
+              <code className="language-jsx line-numbers">{MiniAppCode}</code>
             </pre>
           </Col>
-          <Col>
+          <Col className="mt-5">
             <MiniApp />
           </Col>
         </Row>
 
         <Row className="p-3">
           <Col lg={8} className="p-3">
-            <p>Navbar</p>
+            <p>
+              Here we see the code for the Navbar Component, its very simply but
+              it contains the logic for the Navbar in one concise location. This
+              makes it very easy to edit should we want to make changes to it
+              later, maybe add a new button.
+            </p>
             <pre>
-              <code className="language-jsx line-numbers">{code2}</code>
+              <code className="language-jsx line-numbers">
+                {MiniNavbarCode}
+              </code>
             </pre>
           </Col>
-          <Col>
+          <Col className="mt-5">
             <MiniNavbar />
           </Col>
         </Row>
         <Row className="p-3">
           <Col lg={8} className="p-3">
-            <p>MiniBlog</p>
+            <p>
+              Here we have the MiniBlog component thats made up of two more
+              sub-components, MiniBlogTitle and MiniBlogArticle.
+            </p>
             <pre>
-              <code className="language-jsx line-numbers">{code3}</code>
+              <code className="language-jsx line-numbers">{MiniBlogCode}</code>
             </pre>
           </Col>
-          <Col>
+          <Col className="mt-5">
             <MiniBlog />
           </Col>
         </Row>
         <Row className="p-3">
           <Col lg={8} className="p-3">
-            <p>MiniBlogTitle</p>
+            <p>MiniBlogTitle has the self contained title.</p>
             <pre>
-              <code className="language-jsx line-numbers">{code4}</code>
+              <code className="language-jsx line-numbers">
+                {MiniBlogTitleCode}
+              </code>
             </pre>
           </Col>
-          <Col>
+          <Col className="mt-5">
             <MiniBlogTitle />
           </Col>
         </Row>
         <Row className="p-3">
           <Col lg={8} className="p-3">
-            <p>MiniBlogArticle</p>
+            <p>
+              MiniBlogArticle has the self contained article, thats the beauty
+              of React. You can break down all the features of your app into
+              their smaller pieces. Easy to read, easy to update and most
+              importantly easy to reuse.
+            </p>
             <pre>
-              <code className="language-jsx line-numbers">{code5}</code>
+              <code className="language-jsx line-numbers">
+                {MiniBlogArticleCode}
+              </code>
             </pre>
           </Col>
-          <Col>
+          <Col className="mt-5">
             <MiniBlogArticle />
           </Col>
         </Row>
