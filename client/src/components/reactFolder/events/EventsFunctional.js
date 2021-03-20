@@ -7,9 +7,6 @@ import EventsFunctionalExample, {
   EventsFunctionalExampleCode,
 } from "./EventsFunctionalExample";
 
-const sayHello = () => {
-  return <div>Hello</div>;
-};
 const Article = (
   <p>
     Events in React like the OnClick event are written in camelCase:{" "}
@@ -24,7 +21,7 @@ class EventsFunctional extends React.Component {
   render() {
     return (
       <Container id="events-functional">
-        <LessonHeading heading="Events Functional with Functional" />
+        <LessonHeading heading="Events with Functional Components" />
         <LessonArticle article={Article} />
         <LessonCode code={EventsFunctionalExampleCode} />
         <Row className="p-3">

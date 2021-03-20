@@ -20,7 +20,7 @@ class EventsClass extends React.Component {
   render() {
     return (
       <Container id="events-class">
-        <LessonHeading heading="Events Class" />
+        <LessonHeading heading="Events with Class Components" />
         <LessonArticle article={Article} />
         <LessonCode code={EventsClassExampleCode} />
         <Row className="p-3">

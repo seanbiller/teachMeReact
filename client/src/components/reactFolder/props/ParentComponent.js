@@ -4,7 +4,7 @@ import ChildComponent from "./ChildComponent";
 const ParentComponent = () => {
   return (
     <div>
-      <h1>Vending Machine</h1>
+      <h3>Vending Machine</h3>
       <ChildComponent name="Coca-Cola" />
       <ChildComponent name="Pepsi" />
       <ChildComponent name="Mountain Dew" />

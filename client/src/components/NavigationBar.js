@@ -3,7 +3,7 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../images/logo2.png";
+import Logo from "../images/Transparent-Logo.png";
 
 const NavigationBar = () => {
   return (
@@ -20,7 +20,7 @@ const NavigationBar = () => {
           alt=""
           src={Logo}
           width="50"
-          height="50"
+          height="45"
           className="d-inline-block align-center"
         />{" "}
         TeachMeReact

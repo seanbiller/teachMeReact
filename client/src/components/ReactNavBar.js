@@ -66,6 +66,22 @@ class ReactNavBar extends React.Component {
         >
           Events
         </Nav.Link>
+        <Nav.Link
+          as={Link}
+          smooth
+          to="#lifecycle"
+          scroll={(el) => scrollWithOffset(el)}
+        >
+          LifeCycle Methods
+        </Nav.Link>
+        <Nav.Link
+          as={Link}
+          smooth
+          to="#virtualDom"
+          scroll={(el) => scrollWithOffset(el)}
+        >
+          VirtualDOM
+        </Nav.Link>
       </Nav>
     );
   }

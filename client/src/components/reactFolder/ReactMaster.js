@@ -8,6 +8,8 @@ import Props from "./Props";
 import LessonTitle from "../teachingComponents/LessonTitle";
 import EventsFunctional from "./events/EventsFunctional";
 import EventsClass from "./events/EventsClass";
+import Mounting from "./lifeCycle/Mounting";
+import VirtualDom from "./virtualDom/VirtualDom";
 
 class ReactMaster extends React.Component {
   render() {
@@ -21,6 +23,10 @@ class ReactMaster extends React.Component {
         <LessonTitle hash="events" title="Events" />
         <EventsFunctional />
         <EventsClass />
+        <LessonTitle hash="lifecycle" title="LifeCycle Methods" />
+        <Mounting />
+        <LessonTitle hash="virtualDom" title="Virtual DOM" />
+        <VirtualDom />
       </React.Fragment>
     );
   }
