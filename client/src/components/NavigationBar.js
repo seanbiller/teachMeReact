@@ -34,11 +34,11 @@ const NavigationBar = () => {
           <Nav.Link as={Link} to="/react">
             React
           </Nav.Link>
-          {/* <Nav.Link as={Link} to="/javascript">
-            JavaScript
-          </Nav.Link>
           <Nav.Link as={Link} to="/redux">
             Redux
+          </Nav.Link>
+          {/* <Nav.Link as={Link} to="/javascript">
+            JavaScript
           </Nav.Link>
           <Nav.Link as={Link} to="/libraries">
             3rd Party Libraries

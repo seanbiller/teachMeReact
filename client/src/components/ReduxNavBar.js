@@ -17,12 +17,12 @@ class ReduxNavBar extends React.Component {
         <Nav.Link
           as={Link}
           smooth
-          to="#redux-intro"
+          to="#basic-redux"
           scroll={(el) => scrollWithOffset(el)}
           activeClassName="selected"
           activeStyle={{ color: "red" }}
         >
-          Redux Intro
+          Basic Redux
         </Nav.Link>
       </Nav>
     );

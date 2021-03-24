@@ -1,11 +1,13 @@
 import React from "react";
-import ReduxIntro from "./ReduxIntro";
+import LessonTitle from "../teachingComponents/LessonTitle";
+import BasicRedux from "./basicRedux/BasicRedux";
 
 class ReduxMaster extends React.Component {
   render() {
     return (
       <div>
-        <ReduxIntro />
+        <LessonTitle hash="redux" title="Redux" />
+        <BasicRedux />
       </div>
     );
   }
