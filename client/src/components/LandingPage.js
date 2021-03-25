@@ -17,17 +17,9 @@ const LandingPage = () => {
           <Jumbotron>
             <h1>Welcome to Teach Me React,</h1>
             <p>
-              This website is designed to explain React concepts in the clearest
-              visual way possible. We cover Redux and JavaScript as they pertain
-              to React.
+              This website is designed to explain React, Redux, and JavaScript
+              concepts in the clearest visual way possible.
             </p>
-            <img
-              alt=""
-              src={Logo}
-              width="250"
-              height="250"
-              className="d-inline-block align-center"
-            />
           </Jumbotron>
         </Col>
       </Row>
@@ -37,7 +29,10 @@ const LandingPage = () => {
             <h1>About Me,</h1>
             <p>
               My name is Sean Biller and I'm a React Developer based in the
-              Boston MA area.
+              Boston MA area. I love learning about New Front End technologies
+              and teaching them to other Developers. I'm always open to new
+              opportunities, so if you would like to work with me feel free to
+              shoot me an email or message me on LinkedIn.
             </p>
           </Jumbotron>
         </Col>
