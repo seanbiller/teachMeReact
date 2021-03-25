@@ -96,7 +96,9 @@ const LandingPage = () => {
             <Card.Body>
               <Card.Title>Redux</Card.Title>
               <Card.Text>Start Here to Learn Redux</Card.Text>
-              <Button variant="outline-primary">Coming Soon!</Button>
+              <Button variant="outline-primary" as={Link} to="/redux">
+                Learn Redux
+              </Button>
             </Card.Body>
           </Card>
         </Col>
