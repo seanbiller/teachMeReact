@@ -7,7 +7,6 @@ import ReactLogo from "../images/react.png";
 import ReduxLogo from "../images/redux.png";
 import JavaScriptLogo from "../images/javascript.png";
 import Headshot from "../images/headshot.png";
-import Logo from "../images/logo2.png";
 
 const LandingPage = () => {
   return (

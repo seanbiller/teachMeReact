@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Container, Row, Alert } from "react-bootstrap";
 import Prism from "prismjs";
-import "../../css/functionalVsClass.css";
 
 import ClassComponentWithState, {
   ClassComponentWithStateCode,

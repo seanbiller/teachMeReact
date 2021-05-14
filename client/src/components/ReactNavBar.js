@@ -2,8 +2,6 @@ import React from "react";
 import { Nav } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
 
-import "../css/custom.css";
-
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
   const yOffset = -80;

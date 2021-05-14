@@ -37,16 +37,17 @@ const NavigationBar = () => {
           <Nav.Link as={Link} to="/redux">
             Redux
           </Nav.Link>
-          {/* <Nav.Link as={Link} to="/javascript">
+          <Nav.Link as={Link} to="/javascript">
             JavaScript
           </Nav.Link>
+          {/* 
           <Nav.Link as={Link} to="/libraries">
             3rd Party Libraries
           </Nav.Link> */}
         </Nav>
         <Nav>
           <Button
-            variant="outline-primary"
+            variant="outline-info"
             href="https://www.linkedin.com/in/seanbiller/"
             target="_blank"
           >
@@ -56,7 +57,7 @@ const NavigationBar = () => {
           </Button>
           <span className="ml-2"></span>
           <Button
-            variant="outline-primary"
+            variant="outline-info"
             href="https://github.com/seanbiller"
             target="_blank"
           >

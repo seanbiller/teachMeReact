@@ -1,0 +1,35 @@
+html,
+body {
+}
+
+.sidebar-column {
+  padding: 0;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  align-content: stretch;
+}
+
+.side-nav {
+  background-color: lightgray;
+  height: 100%;
+
+  &__item {
+    color: rgb(67, 42, 165);
+  }
+
+  &__link {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &__icon {
+    align-self: center;
+  }
+}

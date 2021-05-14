@@ -1,0 +1,35 @@
+#right-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 80px;
+  border-left: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+}
+
+.sidebar-col {
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.left-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 318px;
+
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  align-content: center;
+
+  > div a {
+    align-items: center;
+    display: inline-block;
+  }
+  .nav-link {
+    color: darkviolet;
+  }
+}

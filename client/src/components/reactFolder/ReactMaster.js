@@ -14,7 +14,7 @@ import VirtualDom from "./virtualDom/VirtualDom";
 class ReactMaster extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <WhatIsJSX />
         <ReactComponents />
         <FunctionalVsClass />
@@ -27,7 +27,7 @@ class ReactMaster extends React.Component {
         <Mounting />
         <LessonTitle hash="virtualDom" title="Virtual DOM" />
         <VirtualDom />
-      </React.Fragment>
+      </>
     );
   }
 }

@@ -7,7 +7,6 @@ import IndexJS, { IndexJSCode } from "./index";
 import { actionsIndexJsCode } from "./actions";
 import { reducersIndexJsCode } from "./reducers";
 
-import ReduxReactReduxCards from "./ReduxReactReduxCards";
 import { AppJsCode } from "./App";
 
 const intro = (
@@ -168,14 +167,12 @@ const AppJsArticle = (
 class BasicRedux extends React.Component {
   render() {
     return (
-      <Container id="basic-redux">
-        <LessonHeading heading="Basic Redux" />
+      <>
+        <LessonHeading heading="Intro to Redux" />
         <LessonArticle article={intro} />
-        <Row className="p-3">
-          <Col lg={10} className="p-3">
-            <IndexJS />
-          </Col>
-        </Row>
+
+        <IndexJS />
+
         <LessonHeading heading="index.js" />
         <LessonArticle article={indexJsArticle} />
         <LessonCode code={IndexJSCode} />
@@ -193,7 +190,7 @@ class BasicRedux extends React.Component {
             <ReduxReactReduxCards />
           </Col>
         </Row> */}
-      </Container>
+      </>
     );
   }
 }

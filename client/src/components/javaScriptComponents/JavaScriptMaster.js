@@ -1,12 +1,14 @@
 import React from "react";
-import ArrowFunctions from "./ArrowFunctions";
+import ThisKeyword from "./thisKeyword/ThisKeyword";
+import LessonTitle from "../teachingComponents/LessonTitle";
 
 class JavaScriptMaster extends React.Component {
   render() {
     return (
-      <div>
-        <ArrowFunctions />
-      </div>
+      <>
+        <LessonTitle hash="javascript" title="JavaScript" />
+        <ThisKeyword />
+      </>
     );
   }
 }
