@@ -1,0 +1,17 @@
+.left-sidebar {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 10rem;
+  background-color: lightblue;
+
+  a {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+}
