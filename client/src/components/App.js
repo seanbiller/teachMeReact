@@ -29,21 +29,31 @@ class App extends Component {
     return (
       <Router>
         <ScrollToTop />
-        <NavigationBar />
-        <LeftSideNavbar />
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/react" component={ReactMaster} />
-          <Route exact path="/javascript" component={JavaScriptMaster} />
-          <Route exact path="/redux" component={ReduxMaster} />
-          <Route exact path="/libraries" component={LibrariesMaster} />
-        </Switch>
-
-        <Switch>
-          <Route exact path="/react" component={ReactHashSidebar} />
-        </Switch>
-
-        <Footer />
+        <div className="no-bootstrap-container">
+          <div className="header">
+            <NavigationBar />
+          </div>
+          <div className="nav">
+            <LeftSideNavbar />
+          </div>
+          <div className="content">
+            <Switch>
+              <Route exact path="/" component={LandingPage} />
+              <Route exact path="/react" component={ReactMaster} />
+              <Route exact path="/javascript" component={JavaScriptMaster} />
+              <Route exact path="/redux" component={ReduxMaster} />
+              <Route exact path="/libraries" component={LibrariesMaster} />
+            </Switch>
+          </div>
+          <div className="hash-nav">
+            <Switch>
+              <Route exact path="/react" component={ReactHashSidebar} />
+            </Switch>
+          </div>
+          <div className="footer">
+            <Footer />
+          </div>
+        </div>
       </Router>
     );
   }

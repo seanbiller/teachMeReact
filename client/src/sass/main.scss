@@ -1,17 +1,11 @@
-@import "abstracts/variables";
+@import "sassStyles/variables";
+@import "sassStyles/card";
+@import "sassStyles/input";
+@import "sassStyles/jumbotron";
 
-@import "base/base";
-@import "base/custom";
-@import "base/typography";
-
-@import "components/sidebar";
-@import "components/card";
+@import "components/app";
 @import "components/footer";
-@import "components/input";
-@import "components/jumbotron";
 @import "components/navbar";
-@import "components/input";
-@import "components/newNavigation";
 @import "components/3ddisplays";
 @import "components/leftSideNavbar";
 @import "components/rightSideNavbar";
