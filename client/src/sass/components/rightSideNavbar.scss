@@ -1,12 +1,18 @@
 .right-sidebar {
   height: 100%;
   position: fixed;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
 
   a {
     padding: 8px;
     font-size: 15px;
     display: block;
     text-decoration: none;
-    color: $light-grey;
+    color: darkslategray;
+
+    &:hover {
+      color: dodgerblue;
+    }
   }
 }
