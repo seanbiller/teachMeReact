@@ -1,0 +1,35 @@
+.no-bootstrap-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template: 0.5fr 5fr 1fr / 1fr 6fr 1fr;
+  gap: 10px;
+}
+
+.header {
+  grid-row: 1;
+  grid-column: 1 / 4;
+  position: sticky;
+}
+.nav {
+  background-color: aliceblue;
+  grid-row: 2;
+  grid-column: 1;
+}
+.content {
+  background-color: aliceblue;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.hash-nav {
+  background-color: aliceblue;
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.footer {
+  background-color: aliceblue;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}

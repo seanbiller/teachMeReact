@@ -2,6 +2,7 @@ import React from "react";
 import { Jumbotron, Button, Col, Row, Container, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import LandingPageDisplay from "./3DDisplays/LandingPageDisplay";
 
 import ReactLogo from "../images/react.png";
 import ReduxLogo from "../images/redux.png";
@@ -20,6 +21,11 @@ const LandingPage = () => {
               concepts in the clearest visual way possible.
             </p>
           </Jumbotron>
+        </Col>
+      </Row>
+      <Row id="main-3d-display">
+        <Col>
+          <LandingPageDisplay />
         </Col>
       </Row>
       <Row>

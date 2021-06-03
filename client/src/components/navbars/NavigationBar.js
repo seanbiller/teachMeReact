@@ -3,7 +3,7 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../images/Transparent-Logo.png";
+import Logo from "../../images/Transparent-Logo.png";
 
 const NavigationBar = () => {
   return (
@@ -37,9 +37,9 @@ const NavigationBar = () => {
           <Nav.Link as={Link} to="/redux">
             Redux
           </Nav.Link>
-          <Nav.Link as={Link} to="/javascript">
+          {/* <Nav.Link as={Link} to="/javascript">
             JavaScript
-          </Nav.Link>
+          </Nav.Link> */}
           {/* 
           <Nav.Link as={Link} to="/libraries">
             3rd Party Libraries
