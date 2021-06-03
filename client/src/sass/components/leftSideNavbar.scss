@@ -1,0 +1,19 @@
+.left-sidebar {
+  height: 100%;
+  position: fixed;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+
+  a {
+    padding: 8px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: darkslategray;
+    width: 100%;
+
+    &:hover {
+      color: dodgerblue;
+    }
+  }
+}

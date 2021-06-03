@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import LessonHeading from "../../teachingComponents/LessonHeading";
 import LessonArticle from "../../teachingComponents/LessonArticle";
 import LessonCode from "../../teachingComponents/LessonCode";

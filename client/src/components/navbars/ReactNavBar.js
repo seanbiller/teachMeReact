@@ -11,7 +11,7 @@ const scrollWithOffset = (el) => {
 class ReactNavBar extends React.Component {
   render() {
     return (
-      <Nav id="right-sidebar" className="flex-column">
+      <Nav>
         <Nav.Link
           as={Link}
           smooth
